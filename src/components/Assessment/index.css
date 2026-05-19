@@ -1,0 +1,143 @@
+.assessment-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 24px;
+}
+
+.assessment-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.question-section {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.next-btn {
+  background-color: #263868;
+  color: #ffffff;
+  border: none;
+  height: 42px;
+  width: 160px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #164687;
+  color: #ffffff;
+  border: none;
+  height: 42px;
+  width: 180px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.loader-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #d7dfe9;
+  border-top-color: #263868;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.failure-container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-image {
+  width: 320px;
+  margin-bottom: 24px;
+}
+
+.failure-heading {
+  font-family: 'Roboto';
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.retry-btn {
+  width: 120px;
+  height: 42px;
+  background-color: #263868;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .assessment-layout {
+    flex-direction: column;
+  }
+
+  .question-section {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .assessment-container {
+    padding: 14px;
+  }
+
+  .question-section {
+    padding: 18px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .next-btn,
+  .submit-btn {
+    width: 100%;
+  }
+
+  .failure-image {
+    width: 240px;
+  }
+
+  .failure-heading {
+    font-size: 22px;
+  }
+}

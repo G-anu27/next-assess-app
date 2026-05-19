@@ -1,0 +1,49 @@
+.button-option-item {
+  width: 100%;
+}
+
+.option-btn {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  color: #334155;
+  padding: 14px 18px;
+  text-align: left;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.selected-option {
+  background-color: #263868;
+  color: #ffffff;
+  border: none;
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 992px) {
+  .option-btn {
+    font-size: 15px;
+    min-height: 50px;
+  }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+  .option-btn {
+    font-size: 14px;
+    padding: 12px 14px;
+    min-height: 46px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,51 @@
+.timer-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.timer-title {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #496387;
+  margin-bottom: 10px;
+}
+
+.timer-time {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 700;
+  color: #263868;
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 992px) {
+  .timer-card {
+    padding: 18px;
+  }
+
+  .timer-time {
+    font-size: 32px;
+  }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+  .timer-card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .timer-title {
+    font-size: 14px;
+  }
+
+  .timer-time {
+    font-size: 28px;
+  }
+}

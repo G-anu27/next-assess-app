@@ -1,0 +1,41 @@
+.select-container {
+  width: 100%;
+}
+
+.select-input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0 16px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #334155;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-input:focus {
+  border-color: #263868;
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 992px) {
+  .select-input {
+    font-size: 15px;
+    height: 48px;
+  }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+  .select-input {
+    height: 44px;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 0 12px;
+  }
+}

@@ -1,0 +1,128 @@
+.palette-container {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  align-self: flex-start;
+}
+
+.timer-container {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.timer-label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #496387;
+  margin-bottom: 10px;
+}
+
+.timer-value {
+  font-family: 'Roboto';
+  font-size: 34px;
+  color: #263868;
+  font-weight: 700;
+}
+
+.count-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.count-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.answered-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #7c599f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.unanswered-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.count-text {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #334155;
+}
+
+.palette-separator {
+  border: 1px solid #d7dfe9;
+  margin-bottom: 24px;
+}
+
+.questions-heading {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #164687;
+  margin-bottom: 20px;
+}
+
+.questions-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .palette-container {
+    width: 100%;
+  }
+
+  .questions-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .palette-container {
+    padding: 18px;
+  }
+
+  .timer-value {
+    font-size: 28px;
+  }
+
+  .questions-heading {
+    font-size: 18px;
+  }
+
+  .questions-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .count-text {
+    font-size: 14px;
+  }
+}
