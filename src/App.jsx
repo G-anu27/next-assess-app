@@ -2,7 +2,7 @@ import './App.css'
 
 import {Routes, Route} from 'react-router-dom'
 
-import {EvaluationProvider} from './context/EvaluationContext'
+import EvaluationProvider from './Context/EvaluationContext'
 
 import Login from './components/Login'
 import Home from './components/Home'
